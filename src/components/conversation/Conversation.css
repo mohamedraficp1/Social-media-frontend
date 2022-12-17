@@ -1,0 +1,35 @@
+.conversation {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .conversation:hover {
+    background-color: rgb(245, 243, 243);
+  }
+  
+  .conversationImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+
+  .nochatImage {
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .conversationName {
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .conversationName {
+      display: none;
+    }
+  }
+  

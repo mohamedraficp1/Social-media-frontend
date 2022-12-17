@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+.messenger {
+    height: calc(100vh - 70px);
+    display: flex;
+    margin-top: 55px;
+  }
+  
+  .chatMenu {
+    flex: 3;
+  }
+
+  .chatTitle {
+     color: black;
+     font-family: 'Poppins', sans-serif;
+     padding: 15px 0 ;
+     text-align: center;
+  }
+  
+  .chatMenuInput {
+    background-color: transparent;
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 25px;
+  }
+  
+  .chatBox {
+    flex: 5.5;
+  }
+  
+  .chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .chatBoxTop {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+  
+  .chatBoxBottom {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .chatMessageInput {
+    width: 80%;
+    height: 90px;
+    padding: 10px;
+  }
+  
+  .chatSubmitButton {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:#1877f2;
+    color: white;
+  }
+  
+  .chatOnline {
+    flex: 3;
+  }
+  
+  .chatMenuWrapper,
+  .chatBoxWrapper,
+  .chatOnlineWrapper {
+    padding: 10px;
+    height: 100%;
+  }
+
+  .chatMenuWrapper,
+  .chatOnlineWrapper {
+    background: #eceded;
+  } 
+
+  .chatOnlineWrapper {
+    padding-left: 22px;
+  }
+  
+  .noConversationText {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(224, 220, 220);
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .chatMenu {
+      flex: 1;
+    }
+  
+    .chatMenuInput {
+      display: none;
+    }
+  
+    .chatBox{
+      flex: 10;
+    }
+  
+    .chatOnline{
+      flex: 1px;
+    }
+  }
